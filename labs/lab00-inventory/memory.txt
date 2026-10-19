@@ -1,0 +1,10 @@
+exlibris@rockstar ~> sudo dmidecode --type 17 | awk '/Size:/ {size=$2} /Speed:/ {speed=$2" "$3; if(size !~ "No") print "Модуль: " size ", Скорость: " speed}'
+[sudo] пароль для exlibris:
+Модуль: 8, Скорость: 3200 MT/s
+Модуль: 8, Скорость: Memory Speed:
+Модуль: 8, Скорость: 3200 MT/s
+Модуль: 8, Скорость: Memory Speed:
+exlibris@rockstar ~> free -h
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi       6,5Gi       2,7Gi       291Mi       6,5Gi       8,5Gi
+Swap:           15Gi          0B        15Gi

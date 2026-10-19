@@ -1,0 +1,44 @@
+exlibris@rockstar ~> sudo dmidecode -t bios
+[sudo] пароль для exlibris:
+# dmidecode 3.7
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+
+Handle 0x0000, DMI type 0, 26 bytes
+Platform Firmware Information
+	Vendor: AMI
+	Version: F.12
+	Release Date: 12/09/2021
+	Address: 0xF0000
+	Runtime Size: 64 KiB
+	ROM Size: 16 MiB
+	Characteristics:
+		PCI is supported
+		Firmware is upgradeable
+		Firmware shadowing is allowed
+		Boot from CD is supported
+		Selectable boot is supported
+		EDD is supported
+		ACPI is supported
+		Smart battery is supported
+		BIOS boot specification is supported
+		Function key-initiated network boot is supported
+		Targeted content distribution is supported
+		UEFI is supported
+	Platform Firmware Revision: 15.12
+	Embedded Controller Firmware Revision: 89.55
+
+Handle 0x002E, DMI type 13, 22 bytes
+Firmware Language Information
+	Language Description Format: Long
+	Installable Languages: 5
+		en|US|iso8859-1
+		fr|FR|iso8859-1
+		es|ES|iso8859-1
+		zh|TW|unicode
+		zh|CN|unicode
+	Currently Installed Language: en|US|iso8859-1
+
+exlibris@rockstar ~> ls /sys/firmware/efi
+config_table  esrt/             fw_vendor  runtime-map/
+efivars/      fw_platform_size  runtime    systab

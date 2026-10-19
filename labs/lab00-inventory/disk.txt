@@ -1,0 +1,20 @@
+exlibris@rockstar ~> lsblk -o NAME,MODEL,SIZE,TYPE,FSTYPE,MOUNTPOINTS
+NAME        MODEL                        SIZE TYPE FSTYPE MOUNTPOINTS
+nvme0n1     SAMSUNG MZVLB512HBJQ-000H1 476,9G disk
+├─nvme0n1p1                                2G part vfat   /boot
+├─nvme0n1p2                            458,9G part ext4   /
+└─nvme0n1p3                               16G part swap   [SWAP]
+exlibris@rockstar ~> lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE
+NAME    MODEL                      ROTA TRAN     SIZE
+nvme0n1 SAMSUNG MZVLB512HBJQ-000H1    0 nvme   476,9G
+exlibris@rockstar ~> df -h
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/nvme0n1p2     451G         311G  118G           73% /
+devtmpfs           7,4G            0  7,4G            0% /dev
+tmpfs              7,5G         172M  7,4G            3% /dev/shm
+efivarfs           128K          13K  111K           10% /sys/firmware/efi/efivars
+tmpfs              3,0G         2,0M  3,0G            1% /run
+none               1,0M            0  1,0M            0% /run/credentials/systemd-journald.service
+tmpfs              7,5G          39M  7,5G            1% /tmp
+/dev/nvme0n1p1     2,0G         188M  1,9G           10% /boot
+tmpfs              1,5G         232K  1,5G            1% /run/user/1000

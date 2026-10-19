@@ -1,0 +1,2 @@
+exlibris@rockstar ~> grep -cE 'vmx|svm' /proc/cpuinfo
+16

@@ -1,0 +1,6 @@
+exlibris@rockstar ~> cat /proc/cpuinfo | grep 'model name' | head -n 1
+model name	: AMD Ryzen 7 5800H with Radeon Graphics
+exlibris@rockstar ~> nproc
+16
+exlibris@rockstar ~> grep 'core id' /proc/cpuinfo | sort -u | wc -l
+8

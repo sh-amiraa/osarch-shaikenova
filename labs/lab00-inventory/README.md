@@ -1,7 +1,7 @@
 
 # Lab 0 — Inventory your own machine
 
-Pair: Dinmukhamed and Amira                    Driver first half:
+Pair: Dinmukhamed and Amira            
 Machine: OMEN by HP Laptop Arch Linux
 Date: 07.10.2026
 

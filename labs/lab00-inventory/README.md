@@ -22,19 +22,23 @@ free -h[cite: 4]
 grep -cE 'vmx|svm' /proc/cpuinfo[cite: 5]
 
 ## Result
+
 BIOS / UEFI:
 The BIOS vendor is AMI, version F.12 dated 12/09/2021.
 SMBIOS 3.3.0 specification is supported.
 The currently installed language is en|US|iso8859-1.
 The /sys/firmware/efi directory contains config_table, efivars, esrt, fw_platform_size, fw_vendor, runtime, runtime-map, and systab.
+
 CPU:
 The system is equipped with an AMD Ryzen 7 5800H with Radeon Graphics.
 There are 8 physical cores and 16 logical processors (threads).
 Hardware virtualization is supported, with 16 vmx|svm entries found in /proc/cpuinfo.
+
 RAM:
 The system has 8 GB memory modules installed running at 3200 MT/s.
 Total available RAM (Mem) is 14 GiB, with 2.7 GiB free and 8.5 GiB available.
 The swap space is 15 GiB, with 0 bytes used.
+
 Storage Subsystem:
 The installed NVMe drive is a SAMSUNG MZVLB512HBJQ-000H1 with a capacity of 476.9 GB.
 The drive is partitioned into three parts: nvme0n1p1 (2 GB, vfat, mounted at /boot), nvme0n1p2 (458.9 GB, ext4, mounted at /), and nvme0n1p3 (16 GB, swap).

@@ -1,8 +1,8 @@
 # Lab 0 — Inventory your own machine
 
-Pair:                     Driver first half:
-Machine:
-Date:
+Pair: Dinmukhamed and Amira  
+Machine: OMEN by HP Laptop Arch Linux
+Date: 07.10.2026
 
 ## What I did
 

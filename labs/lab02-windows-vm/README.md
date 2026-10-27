@@ -35,7 +35,7 @@ lab01-ubuntu                  lab02-windows
 At the first time freeze was so strong I couldn't take a screenshot. 
 
 ## Evidence
-- [evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt) — Windows address
+- [evidence/ipconfig-windows.txt](ipconfig-windows.txt) — Windows address
 - [evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt) — Ubuntu address
 - [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — both directions and the internet
 - [evidence/host-memory-before.png](evidence/host-memory-before.png) — host memory, guests off

@@ -36,7 +36,7 @@ At the first time freeze was so strong I couldn't take a screenshot.
 
 ## Evidence
 - [evidence/ipconfig-windows.txt](ipconfig-windows.txt) — Windows address
-- [evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt) — Ubuntu address
-- [evidence/ping-both-ways.txt](evidence/ping-both-ways.txt) — both directions and the internet
-- [evidence/host-memory-before.png](evidence/host-memory-before.png) — host memory, guests off
-- [evidence/host-memory-after.png](evidence/host-memory-after.png) — host memory, both guests overcommitted
+- [evidence/ip-addr-linux.txt](ip-addr-linux.txt) — Ubuntu address
+- [evidence/ping-both-ways.txt](ping-both-ways.txt) — both directions and the internet
+- [evidence/host-memory-before.png](host-memory-before.png) — host memory, guests off
+- [evidence/host-memory-after.png](host-memory-after.png) — host memory, both guests overcommitted

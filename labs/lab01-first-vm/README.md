@@ -9,7 +9,7 @@ Date: 17.10.2026
 Steps, with commands in code blocks. Not prose about the steps.
 
 Installed VirtualBox 7.2.20. Licence: https://www.virtualbox.org/wiki/GPLv3
-Created VM lab01-ubuntu: 4 vCPU, 2 GB RAM, 25 GB dynamic disk, NAT.
+Created VM lab01-ubuntu: 4 vCPU, 2 GB RAM, 25 GB dynamic disk, NAT because my system has only 16GB and I didn't want to freeze my PC.
 Installed Ubuntu Server, took snapshot clean-install.
 Broke it: sudo rm -rf /usr/bin
 Rolled back to clean-install

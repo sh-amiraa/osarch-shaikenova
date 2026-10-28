@@ -20,7 +20,7 @@ The VM boots; the break-and-rollback cycle is shown in the evidence below.
 
 ## What did not work the first time
 
-
+we were not able to commit to github the clean-install, had to make a new snapshot called test1. After a while we made the new snapshot, within guideline rules.   
 
 ## Evidence
 

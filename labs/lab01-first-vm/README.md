@@ -1,7 +1,8 @@
 # Lab 1 — Your first virtual machine
 
 Pair: Dinmukhamed and Amira                
-Machine: lab01-ubuntu (OMEN by HP Laptop Arch Linux 16GB 16CPU, guests Ubuntu Server) 
+Machine: lab01-ubuntu (OMEN by HP Laptop Arch Linux 16GB 16CPU, guests Ubuntu Server)
+
 Date: 17.10.2026
 
 ## What I did

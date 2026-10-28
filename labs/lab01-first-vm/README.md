@@ -20,7 +20,7 @@ The VM boots; the break-and-rollback cycle is shown in the evidence below.
 
 ## What did not work the first time
 
-we were not able to commit to github the clean-install, had to make a new snapshot called test1. After a while we made the new snapshot, within guideline rules.   
+We were not able to commit to github the clean-install, had to make a new snapshot called test1. After a while we made the new snapshot, within guideline rules.   
 
 ## Evidence
 
@@ -31,3 +31,5 @@ we were not able to commit to github the clean-install, had to make a new snapsh
 [Evidence](evidence/broken.png) — the guest in its broken state
 
 [Evidence](evidence/snapshot-list.png) — the snapshot, after the rollback
+
+[Evidence](evidence/clean-instal.png) — clean install

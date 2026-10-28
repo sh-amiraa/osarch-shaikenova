@@ -1,7 +1,9 @@
 # Lab 2 — A Windows guest, and a network between them
 
 Pair: Dinmukhamed / Amira
+
 Machine: OMEN by HP Laptop Arch Linux 16GB 16CPU, guests Ubuntu Server + Windows 11 Enterprise eval
+
 Date: <23.10.2026>
 
 ## What I did

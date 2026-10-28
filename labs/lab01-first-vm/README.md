@@ -20,7 +20,7 @@ The VM boots; the break-and-rollback cycle is shown in the evidence below.
 
 ## What did not work the first time
 
-Nothing
+
 
 ## Evidence
 

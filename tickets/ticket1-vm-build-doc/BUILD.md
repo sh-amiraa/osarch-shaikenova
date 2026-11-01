@@ -113,7 +113,7 @@ A snapshot saves the exact state of your VM so you can go back to it if somethin
 2. Click on `test-dev-vm` in the left list
 3. In the top right panel, click on the **Snapshots** tab (or press `Ctrl` + `Shift` + `S`)
 4. Click the **Take** button 
-5. Type a name for your snapshot (like `clean-install`) and click **OK**
+5. Type a name for your snapshot (like `clean-base`) and click **OK**
 
 > *Why:* Making a save-point right after finishing the setup means you won't have to reinstall everything from scratch if you break the system later
 

@@ -6,7 +6,7 @@
 
 ## 2. What was actually needed
 
-The original request was written by a non-technical person, so it left out a lot of important details like how much RAM to use, CPU cores, disk size, and network settings. If I just installed a VM using default settings without thinking, it might crash the host computer or the internet wouldn't work properly for testing. I decided to use an Ubuntu VM in VirtualBox with safe settings (2 GB RAM, 2 CPU cores, and a 25 GB hard drive) to keep the host computer safe, and set up NAT so the VM can easily get internet access 
+The original request was written by a non-technical person, so it left out a lot of important details like how much RAM to use, CPU cores, disk size, and network settings. If I just installed a VM using default settings without thinking, it might crash the host computer or the internet wouldn't work properly for testing. I decided to use an Ubuntu VM in VirtualBox with safe settings (2 GB RAM, 2 CPU cores, and a 25 GB hard drive) to keep the host computer safe, and set up NAT so the VM can easily get internet access. I assumed the user already has VirtualBox installed and a downloaded Ubuntu Server ISO
 
 ## 3. What I did
 

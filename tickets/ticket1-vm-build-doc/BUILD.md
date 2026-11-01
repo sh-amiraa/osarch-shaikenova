@@ -20,7 +20,8 @@
 
 4. Click on the **Hard Disk** section:
 * Choose **Create a virtual hard disk now**
-* Set the size to `25 GB` and select **Dynamically allocated**
+* Set the size to `25 GB` and select **Dynamically allocated** or leave the box for "Pre-allocate full size" **unchecked**
+* Click Finish
 
 
 

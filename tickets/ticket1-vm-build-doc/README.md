@@ -24,7 +24,7 @@ The original request was written by a non-technical person, so it left out a lot
 * [evidence/02-disk-settings.png](evidence/02-disk-settings.png) — Screenshot of the 25 GB virtual hard drive setup
 * [evidence/03-network-adapter.png](evidence/03-network-adapter.png) — Screenshot showing the network adapter set to NAT
 * [evidence/04-guest-uname.txt](evidence/04-guest-uname.txt) — Text file with the output of the `uname -a` command from the VM
-* [evidence/05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) — Text file showing that internet ping tests were successful
+* [evidence/05-ping-result.txt](evidence/05-ping-result.txt) — Text file showing that internet ping tests were successful
 * [evidence/06-snapshot-list.png](evidence/06-snapshot-list.png) — Screenshot of the VirtualBox snapshot manager with our `clean-base` snapshot
 
 ## 5. What I would do differently

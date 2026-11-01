@@ -40,7 +40,7 @@
 3. Make sure **Enable Network Adapter** is checked and the connection type is set to **NAT**
 4. Click **OK**
 
-> *Why:* The school network blocks unknown MAC addresses, so if we use Bridged mode, the internet won't work. NAT lets the VM share your computer's internet safely without any network issues
+> *Why:* NAT lets the virtual machine use your computer's internet connection safely without exposing it to risks on the local network
 
 ---
 

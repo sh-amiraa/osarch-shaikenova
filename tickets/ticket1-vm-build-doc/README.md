@@ -30,4 +30,4 @@ The original request was written by a non-technical person, so it left out a lot
 
 ## 5. What I would do differently
 
-At first, I had trouble getting the text for files 04 and 05 because my mouse cursor wouldn't go inside the virtual machine terminal, and I didn't know how to copy the text easily. Next time, I will remember to use the Alt+Tab to release the mouse or save command outputs directly to files via terminal redirection
+At first, I had trouble getting the text for files 04 and 05 because my mouse cursor wouldn't go inside the virtual machine terminal, and I didn't know how to copy the text easily. Next time, I will remember to use the Ctrl + Alt + Delete to release the mouse or save command outputs directly to files via terminal redirection

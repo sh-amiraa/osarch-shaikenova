@@ -129,7 +129,7 @@ Source: https://www.intel.com/content/www/us/en/support/articles/000089190/proce
 | Motherboard | MSI PRO B760M-A WIFI DDR4 | Has LGA1700 and lists 13th Gen Intel Core; its slots take only DDR4. |
 | Memory | Crucial DDR4-3200, 16 GB | The board takes only DDR4, and 3200 MT/s equals both the board's JEDEC speed and the i5-13400's DDR4 maximum. The single module goes in DIMMA2 (MSI says to fill it first). |
 | SSD | Samsung 870 EVO 1 TB 2.5" SATA | The board has 4 SATA 6 Gb/s ports and a SATA cable in the box; the drive uses that data cable and SATA power from the PSU. |
-| Power supply | Corsair RM750e | The motherboard requires a 24-pin ATX power connector and an 8-pin CPU power connector. The Corsair RM750e (750W, 80+ Gold) provides the required power connections and is more than sufficient for this build with the 65W Intel Core i5-13400 CPU. |
+| Power supply | Corsair RM750e | The motherboard requires a 24-pin ATX power connector and an 8-pin CPU power connector. The Corsair RM750e (750 W, 80+ Gold) provides the required connections and sufficient power capacity for this configuration, including the CPU's maximum turbo power of 148 W. |
 | Cooler | Intel Laminar RM1 (part 10b) | Comes in the box with the boxed i5-13400, mounts on LGA1700, plugs into CPU_FAN1, and is rated by Intel for processors up to 65 W. |
 
 **What Build 2 still needs to switch on:** a case, a display, a keyboard, a mouse, and an operating system installed on the SSD. Video comes from the board's HDMI/DisplayPort and the i5-13400's integrated UHD Graphics 730, so a graphics card is optional. Memory is one module, so it runs in single-channel mode.

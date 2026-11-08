@@ -4,7 +4,7 @@ Pair: Dinmukhamed + Amira
 
 Machine: Windows 11 Host / Ubuntu VM
 
-Date: 2026-11-08
+Date: 08.11.2026
 
 ## What I did
 

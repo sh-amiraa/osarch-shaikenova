@@ -1,6 +1,6 @@
 # Lab 3 — Teardown, and the same machine from the command line
 
-Pair: Dinmukhamed + Amira · Machine: Windows 11 Host / Ubuntu VM · Date: 2026-11-08
+Pair: Dinmukhamed + Amira · Machine: Windows 11 Host / Ubuntu VM · Date: 08.11.2026
 
 ## Part 1 — Ten parts
 

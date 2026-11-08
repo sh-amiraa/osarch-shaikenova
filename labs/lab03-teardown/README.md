@@ -134,7 +134,7 @@ Source: https://www.intel.com/content/www/us/en/support/articles/000089190/proce
 
 **What Build 2 still needs to switch on:** a case, a display, a keyboard, a mouse, and an operating system installed on the SSD. Video comes from the board's HDMI/DisplayPort and the i5-13400's integrated UHD Graphics 730, so a graphics card is optional. Memory is one module, so it runs in single-channel mode.
 
-## Part 2 — Same facts, three operating systems
+## Part 2 — Same facts, two operating systems
 
 Windows (PowerShell) ran on the **host**; Linux (Ubuntu) ran in a **VirtualBox VM** on that same host. Differences between the columns therefore come partly from the operating system and partly from virtualization. macOS is not included: nobody in the pair has a Mac.
 

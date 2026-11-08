@@ -69,7 +69,7 @@ Source: https://www.corsair.com/ww/en/p/psu/cp-9020295-na/rme-series-rm750e-full
 
 ### 10. Stock cooler — both processors ship with one
 
-Both processors come with a cooler in the box, so this part has two entries: the AMD Wraith Stealth (with the Ryzen 5 7600) and the Intel Laminar RM1 (with the boxed Core i5-13400). Tray and "F" versions have no cooler.
+Both processors come with a cooler in the box, so this part has two entries: the AMD Wraith Stealth (with the Ryzen 5 7600) and the Intel Laminar RM1 (with the boxed Core i5-13400). 
 
 #### 10a. AMD Wraith Stealth
 

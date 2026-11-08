@@ -106,7 +106,8 @@ Source: https://www.intel.com/content/www/us/en/support/articles/000089190/proce
 | Power connectors | 24-pin ATX, 8-pin +12 V | 24-pin ATX, 8-pin +12 V, 4-pin ATX 12 V |
 | Video outputs | HDMI, DisplayPort, VGA | 2 x HDMI, 2 x DisplayPort |
 | Processors accepted | The manual names Ryzen 7000 series; the CPU Support list also shows Ryzen 8000 and 9000. The Ryzen 5 7600 is on the list. | Intel Core 14th, 13th and 12th Gen, Pentium Gold and Celeron. The i5-13400 is 13th Gen. |
-| BIOS update | The CPU Support list on asus.com has a "Validated since BIOS" column with the minimum BIOS per processor; BIOS FlashBack™ can update the BIOS with no CPU or memory installed. | Support Intel® Core™ 14th/ 13th/ 12th Gen Processors, Intel® Pentium® Gold and Celeron® Processors
+| BIOS update | AMD Socket AM5 for AMD Ryzen™ 9000 & 8000 & 7000 Series Desktop Processors*
+Supports up to AMD 170W CPU | Support Intel® Core™ 14th/ 13th/ 12th Gen Processors, Intel® Pentium® Gold and Celeron® Processors
 LGA 1700. |
 
 ### Build 1 — AMD AM5 / DDR5

@@ -132,7 +132,7 @@ Source: https://www.intel.com/content/www/us/en/support/articles/000089190/proce
 | Power supply | Corsair RM750e | The motherboard requires a 24-pin ATX power connector and an 8-pin CPU power connector. The Corsair RM750e (750W, 80+ Gold) provides the required power connections and is more than sufficient for this build with the 65W Intel Core i5-13400 CPU. |
 | Cooler | Intel Laminar RM1 (part 10b) | Comes in the box with the boxed i5-13400, mounts on LGA1700, plugs into CPU_FAN1, and is rated by Intel for processors up to 65 W. |
 
-**What Build 2 still needs to switch on:** a power supply (the list has only one, the Corsair RM750e, used in Build 1), a case, a display, a keyboard, a mouse, and an operating system installed on the SSD. Video comes from the board's HDMI/DisplayPort and the i5-13400's integrated UHD Graphics 730, so a graphics card is optional. Memory is one module, so it runs in single-channel mode.
+**What Build 2 still needs to switch on:** a case, a display, a keyboard, a mouse, and an operating system installed on the SSD. Video comes from the board's HDMI/DisplayPort and the i5-13400's integrated UHD Graphics 730, so a graphics card is optional. Memory is one module, so it runs in single-channel mode.
 
 ## Part 2 — Same facts, three operating systems
 

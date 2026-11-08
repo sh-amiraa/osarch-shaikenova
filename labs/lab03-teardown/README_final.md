@@ -1,6 +1,22 @@
 # Lab 3 — Teardown, and the same machine from the command line
 
-Pair: Dinmukhamed + Amira · Date: 2026-11-08
+Pair: Dinmukhamed + Amira
+
+Machine: Windows 11 Host / Ubuntu VM
+
+Date: 08.11.2026
+
+## What I did
+
+1. **Looked up specs for 10 hardware parts** on official sites (AMD, Intel, ASUS, MSI, Kingston, Crucial, Samsung, Corsair) to check compatibility, connections, and limits
+2. **Saved photos of each component** to `evidence/photos/` and described how they connect to other parts and what limits they have
+3. **Designed two working PC builds** and checked socket, chipset, and memory support
+4. **Ran terminal commands on the Windows 11 host** using PowerShell:
+   `Get-CimInstance Win32_Processor`, `Get-CimInstance Win32_PhysicalMemory`, `Get-PhysicalDisk`, `Get-Volume C`, `$env:PROCESSOR_ARCHITECTURE`
+5. **Ran terminal commands inside the Ubuntu VM** using Linux CLI:
+   `lscpu`, `free -h`, `sudo dmidecode -t memory`, `lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE`, `df -h /`, `uname -m`
+6. **Saved the command outputs** to `evidence/windows-specs.txt` and `evidence/linux-specs.txt`
+7. **Created a comparison table** to analyze how VirtualBox hides physical hardware (virtual SATA drive, fewer cores, restricted RAM)
 
 ## Part 1 — Ten parts
 

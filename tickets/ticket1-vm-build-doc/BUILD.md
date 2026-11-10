@@ -96,9 +96,9 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 Ubuntu Server has no desktop and no Ctrl+Alt+T; the black screen after login *is* the terminal.
 1. Type each command and press Enter. To save the output into a file at the same time:
    ```bash
-   { echo '$ uname -a'; uname -a; echo; echo '$ lsb_release -a'; lsb_release -a; echo; echo '$ ip -br a'; ip -br a; } | tee ~/04-guest-uname.txt
+   { echo '$ uname -a'; uname -a; echo; echo '$ lsb_release -a'; lsb_release -a; } | tee ~/04-guest-uname.txt
    ```
-   **Check:** a line `Linux … x86_64 GNU/Linux`, `Ubuntu 26.04…`, and an address `10.0.2.x`. Write the address down: [UBUNTU_IP].
+   **Check:** the output confirms the Linux kernel architecture and the installed Ubuntu version.
    The file is saved as `evidence/04-guest-uname.txt` (see "Getting files out" below).
 2. Check the disk is fully used:
    ```bash

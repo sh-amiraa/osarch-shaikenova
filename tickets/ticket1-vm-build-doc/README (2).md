@@ -21,14 +21,14 @@
 | Hypervisor, licence, ISO | Is anything allowed to be bought? Is a 90-day Windows trial acceptable? | VirtualBox 7 (free, GPLv2), no Extension Pack, evaluation ISOs (free, no key) |
 | Reader | Who follows the document? | Aigerim: one action per step, a screenshot at every step, a check after steps |
 
-**Where the request is wrong or ambiguous**
+**Where the request is wrong**
 - *"Nothing special"* hides the decisions that matter: which OS, how much of the host, which network. Aigerim cannot judge these, so I had to.
 - *"Without breaking anything"* means two different things. The **host** is protected because a VM lives in its own virtual disk and memory, and I cap its RAM and CPU so it cannot starve the host. The **VM itself** can still be broken, so the document needs a clean snapshot and a **tested** way back to it.
 - *"A test computer"* suggests hardware, but a virtual machine is the cheaper and safer way to meet the same need.
 
 ## 3. What I did
 
-**Host and resource calculation** (numbers from my Lab 0 notes)
+**Host and resource calculation** 
 
 | | Total | Host at idle | Ubuntu guest | Windows guest | Headroom |
 |---|---|---|---|---|---|
@@ -39,19 +39,15 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 
 **Steps** (full instructions with screenshots and reasons are in [BUILD.md](BUILD.md))
 1. Checked that virtualization is enabled on the host.
-2. Downloaded VirtualBox 7, the Ubuntu Server ISO and the Windows 11 Enterprise evaluation ISO; checked the SHA-256 of the Ubuntu ISO:
-   ```powershell
-   Get-FileHash .\ubuntu-24.04-live-server-amd64.iso -Algorithm SHA256
-   ```
-3. Created the NAT Network `osarch-net` (10.0.2.0/24, DHCP on).
+2. Downloaded VirtualBox, the Ubuntu Server ISO and the Windows 11 Enterprise evaluation ISO.
+3. Created the NAT Network `osarch-net`.
 4. Built `test-dev-vm` (Ubuntu Server) and `win11-eval` (Windows 11), both on `osarch-net`.
-5. Verified inside each guest and tested the network:
+5. Verified inside each guest:
    ```bash
    uname -a
    lsb_release -a
-   ping -c 4 <windows-ip>
    ```
-6. Took a snapshot `clean-base` of each guest and proved the rollback works.
+6. Took a snapshot `clean-install` of each guest and proved the rollback works.
 
 **Settings that differ from the default**
 

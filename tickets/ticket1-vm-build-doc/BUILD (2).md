@@ -122,7 +122,7 @@ Copying from the black window is hard. Easiest: open it in an ordinary window wi
 
 ### E1. Create it
 1. Click **New**. Name: `win11-eval`. ISO Image: the Windows file. Type **Microsoft Windows**, Version **Windows 11 (64-bit)**.
-2. **Tick "Skip Unattended Installation".**
+2. **Unattended Installation: Make sure this box is unchecked.**
 3. Hardware: Base Memory `4096 MB`, Processors `2`, tick **Enable EFI**.
 4. Hard Disk: `64 GB`, Pre-allocate unchecked → **Finish**.
 5. Select `win11-eval` → **Settings → System → Motherboard**: check that **EFI** is enabled, set **TPM** to `v2.0`, tick **Enable Secure Boot**.

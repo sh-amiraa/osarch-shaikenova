@@ -157,18 +157,31 @@ netsh advfirewall firewall add rule name="Allow ICMPv4 In (lab)" protocol=icmpv4
 
 ## Part F. Check that the two machines are on one network
 
-Start both machines. Find the addresses: Ubuntu `ip -br a` → [UBUNTU_IP]; Windows open Command Prompt, `ipconfig` → IPv4 Address [WIN_IP]. Both start with `10.0.2.`
-Save everything below into **one** file, unedited: `evidence/05-ping-between-guests.txt`.
+Start both machines. Everything below goes into **one** file, unedited: `evidence/05-ping-between-guests.txt`. It has four blocks: each machine pings the internet, and each machine pings the other one.
 
-1. On Ubuntu: `ping -c 4 [WIN_IP]` → **Check:** `0% packet loss`.
-2. On Windows: `ping [UBUNTU_IP]` → **Check:** `Lost = 0 (0% loss)`.
-3. On Ubuntu: `ping -c 4 8.8.8.8` → internet check.
-4. On Windows: `ping 8.8.8.8` → internet check. Also open a website in the browser.
+1. Find the addresses.
+   - On Ubuntu: `ip -br a` → write down the address that starts with `10.0.2.` → [UBUNTU_IP].
+   - On Windows: open PowerShell, run `ipconfig` → IPv4 Address → [WIN_IP].
+   **Check:** both addresses start with `10.0.2.` and are different from each other.
+2. Ubuntu → internet. Run `ping -c 4 ubuntu.com`.
+   **Check:** `4 packets transmitted, 4 received, 0% packet loss`.
+3. Ubuntu → Windows. Run `ping -c 4 [WIN_IP]`.
+   **Check:** `0% packet loss`. If you get 100% loss, the Windows firewall rule from Part E is missing.
+4. Windows → internet. Run `ping ubuntu.com`.
+   **Check:** `Lost = 0 (0% loss)`.
+5. Windows → Ubuntu. Run `ping [UBUNTU_IP]`.
+   **Check:** `Lost = 0 (0% loss)`.
 
-Save the command and its output each time (Ubuntu: `| tee -a ~/05.txt`; Windows: select text in the window and press Enter to copy, then paste into Notepad). Put the four blocks in one file with the command line above each block.
+**Why `ping -c 4`:** on Ubuntu, plain `ping` never stops by itself, so you would have to press Ctrl+C and the output gets long. `-c 4` sends exactly four packets and then prints the summary. On Windows, `ping` already stops after four.
 
-**Why 8.8.8.8:** it is Google's public address. Pinging a number, not a name, tests the connection without involving name lookup; if this works but websites do not, the problem is DNS, not the network.
+**Why ping ubuntu.com and not only an IP number:** a name must be looked up first (DNS) and then reached. If it works, both the connection and the name lookup work. If pinging a number such as `8.8.8.8` works but `ubuntu.com` does not, the problem is DNS, not the network.
 
+**Why we ping the other machine by its address:** this is the proof that the two machines are on one network. A reply here means NAT Network `osarch-net` is doing its job. Slow ping times to the internet (hundreds of milliseconds) are normal for a virtual machine on a laptop and are not a problem as long as there is no packet loss.
+
+**How to save the output (do not retype it, and do not edit it):**
+- Ubuntu: add `| tee -a ~/05.txt` to each command, for example `ping -c 4 ubuntu.com | tee -a ~/05.txt`, then copy the file out as in "Getting files out of the Ubuntu machine" (Part D4), or select and copy the text from the SSH window.
+- Windows: select the text in the window, press Enter to copy, paste into Notepad.
+- Put the four blocks into one file. Above each block write a title line: `=== Ubuntu -> internet ===`, `=== Ubuntu -> Windows ===`, `=== Windows -> internet ===`, `=== Windows -> Ubuntu ===`. Leave the command line and the result of the ping exactly as they were.
 ---
 
 ## Part G. Save a clean state and test going back

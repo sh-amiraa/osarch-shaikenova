@@ -71,8 +71,6 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 
 **Network verification:** The current evidence confirms internet connectivity from both guests and successful communication from Windows to Ubuntu.
 
-**One thing that went wrong and how I fixed it.** At first, I had trouble accessing the terminal output because the mouse cursor remained captured inside the virtual machine. I learned to release it using the Right Ctrl host key. I also discovered that saving command output directly to files using terminal redirection was more reliable than copying it manually.
-
 ## 4. Evidence
 
 - [evidence/01-new-vm-wizard.png](evidence/01-new-vm-wizard.png) — the new-VM wizard with my choices for the Ubuntu guest.
@@ -87,4 +85,4 @@ The step-by-step screenshots used in BUILD.md are in [screenshots/](screenshots/
 
 ## 5. What I would do differently
 
-At first, I had trouble getting the text for files 04 and 05 because my mouse cursor wouldn't go inside the virtual machine terminal, and I didn't know how to copy the text easily. Next time, I will remember to use the Ctrl + Alt + Delete to release the mouse or save command outputs directly to files via terminal redirection.
+At first, I had trouble collecting the text for evidence files 04 and 05 because I did not know how to release the mouse cursor or copy terminal output easily. I learned that pressing Right Ctrl releases the mouse from VirtualBox. I also found that saving command outputs directly to files using terminal redirection is more reliable. Next time, I would prepare the evidence collection process before starting the installation.

@@ -64,11 +64,11 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
    ![wizard](evidence/01-new-vm-wizard.png)
 4. Hardware: Base Memory `2048 MB`, Processors `2`.
    **Why:** 2 GB is enough for Ubuntu Server and leaves the laptop fast.
-   ![hardware](screenshots/s06-ubuntu-hardware.png)
-5. Hard Disk: **Create a Virtual Hard Disk Now**, `25 GB`, leave **Pre-allocate Full Size unchecked**.
+   ![hardware](evidence/01-hardware-settings.png)
+6. Hard Disk: **Create a Virtual Hard Disk Now**, `25 GB`, leave **Pre-allocate Full Size unchecked**.
    **Why:** the file only grows as data is written, instead of taking 25 GB at once.
    ![disk](evidence/02-disk-settings.png)
-6. Click **Finish**. **Check:** `test-dev-vm` appears in the left list.
+7. Click **Finish**. **Check:** `test-dev-vm` appears in the left list.
 
 ### D2. Connect it to the network
 1. Select `test-dev-vm` → **Settings → Network → Adapter 1**.
@@ -237,7 +237,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 | `screenshots/s01-virtualization.png` | Task Manager → CPU, "Virtualization: Enabled" | A2 |
 | `screenshots/s05-nat-network.png` | NAT Network `osarch-net` in the list | C2 |
 | `evidence/01-new-vm-wizard.png` | New-VM wizard for Ubuntu | D1 |
-| `screenshots/s06-ubuntu-hardware.png` | Ubuntu: 2048 MB RAM, 2 processors | D1 |
+| `evidence/01-hardware-settings.png` | Ubuntu: 2048 MB RAM, 2 processors | D1 |
 | `evidence/02-disk-settings.png` | Ubuntu disk 25 GB, dynamically allocated | D1 |
 | `evidence/03-network-adapter.png` | Ubuntu adapter: NAT Network `osarch-net` | D2 |
 | `screenshots/s08-ubuntu-login.png` | Ubuntu prompt after login | D3 |

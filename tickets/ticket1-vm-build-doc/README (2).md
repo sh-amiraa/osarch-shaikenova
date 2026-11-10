@@ -78,6 +78,7 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 ## 4. Evidence
 
 - [evidence/01-new-vm-wizard.png](evidence/01-new-vm-wizard.png) — the new-VM wizard with my choices for the Ubuntu guest.
+- [evidence/01-hardware-settings.png](evidence/01-hardware-settings.png) — Screenshot showing the 2048 MB RAM and 2 CPU cores configuration
 - [evidence/02-disk-settings.png](evidence/02-disk-settings.png) — 25 GB disk, dynamically allocated.
 - [evidence/03-network-adapter.png](evidence/03-network-adapter.png) — the guest's adapter set to NAT Network `osarch-net`.
 - [evidence/04-guest-uname.txt](evidence/04-guest-uname.txt) — `uname -a` and `lsb_release -a` run inside the Ubuntu guest, command lines visible.

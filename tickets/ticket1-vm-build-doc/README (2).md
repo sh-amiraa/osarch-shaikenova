@@ -89,4 +89,4 @@ The step-by-step screenshots used in BUILD.md are in [screenshots/](screenshots/
 
 ## 5. What I would do differently
 
-[Keep only what is true for you. Suggested:] Take the screenshots while building instead of afterwards, and put both guests on the NAT Network from the first minute so no adapter has to be changed later. Save every command output with `| tee` instead of copying from the VM window. And before trusting a snapshot, test the rollback once on purpose.
+At first, I had trouble getting the text for files 04 and 05 because my mouse cursor wouldn't go inside the virtual machine terminal, and I didn't know how to copy the text easily. Next time, I will remember to use the Ctrl + Alt + Delete to release the mouse or save command outputs directly to files via terminal redirection

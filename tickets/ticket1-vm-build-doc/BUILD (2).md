@@ -1,6 +1,6 @@
 # BUILD.md — Build a test machine: Ubuntu Server + Windows 11 on one network
 
-**Written for:** Aigerim. You need a laptop and an internet connection, nothing else.
+You need a laptop and an internet connection, nothing else.
 **What you get:** two virtual machines (small "computers inside your computer"). They share a private network, both reach the internet, both can ping each other, and both have a saved clean state you can go back to if anything breaks.
 **Time:** about 2–3 hours, most of it downloads and installs.
 

@@ -65,7 +65,7 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 - *NAT*: internet works, but the guests cannot see each other: fails the requirement.
 - *Bridged*: guests appear on the real network with their own MAC address; networks that filter by MAC (the Innotech teaching network, per the brief) will not accept them, and the VMs are exposed.
 - *Host-only*: guests see each other but have no internet.
-- *NAT Network*: both. **Chosen.**
+- *NAT Network*: provides internet access and communication between the two guests while keeping them separate from the physical office network. **Chosen because it best matches all three requirements.**
 
 **Why VirtualBox:** free, same on every host OS, supports TPM 2.0 for Windows 11 from version 7.0. VMware Workstation Pro, Hyper-V (not in Windows Home) and KVM/QEMU (Linux host only) were considered; details are in BUILD.md.
 

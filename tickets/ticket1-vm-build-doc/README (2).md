@@ -14,7 +14,7 @@
 
 | Left out | What I would ask Aigerim | What I assumed instead |
 |---|---|---|
-| Which operating systems ("nothing special") | What will the developer build and test: Linux, Windows, both? | Both: Ubuntu Server 24.04 LTS and Windows 11 Enterprise evaluation, because a developer tests on both and Lab 1/2 already used them |
+| Which operating systems | What will the developer build and test: Linux, Windows, both? | Both: Ubuntu Server 24.04 LTS and Windows 11 Enterprise evaluation, because a developer tests on both |
 | Physical or virtual | Can the test machine be a virtual machine on an existing computer? | Virtual: it can be copied, restored and thrown away, a physical PC cannot |
 | Size of the host | Which computer will host it, how much RAM and disk? | My laptop, numbers from Lab 0 (see section 3) |
 | Network | Does it need the internet? Must the two machines see each other? Is the office network filtered? | Internet yes; both machines see each other; they must not sit on the real network → NAT Network |

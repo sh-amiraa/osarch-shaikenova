@@ -27,7 +27,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 | Windows 11 | 4 GB (Microsoft minimum) | 2 | 64 GB (Microsoft minimum) |
 | Both together | 6 GB | 4 | 89 GB |
 
-**Rule:** after giving 6 GB to the guests, the laptop must keep at least 6 GB. For my laptop: 16 − 8.6 − 6 = 1.4 GB left. If you have less than 12 GB RAM, do not run both guests at the same time. Free disk space must be more than 89 GB (disks grow up to their maximum).
+**Rule:** calculate available RAM using the host's actual idle memory usage, not only its total RAM. For my laptop: 16 GB total − 8.6 GB used by the host at idle − 6 GB assigned to both guests = approximately 1.4 GB remaining. This is limited headroom, so I would not recommend running both guests simultaneously on this laptop. Start one guest at a time or use a host with more RAM. Always check Task Manager before starting a VM.
 
 ---
 
@@ -37,7 +37,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
    **Why VirtualBox:** it is free, works the same on Windows, macOS and Linux, and (version 7+) supports the security chip Windows 11 demands.
    **Licence:** VirtualBox itself is free (GPLv2). **Do not download the "Extension Pack"**: it is free only for personal or educational use, and an office would need to buy a licence.
 2. Run the installer and keep all default options.
-3. Open https://ubuntu.com/download/server and download **Ubuntu Server 24.04 LTS**.
+3. Open https://ubuntu.com/download/server and download **Ubuntu Server 26.04 LTS**.
    **Why Server and LTS:** no desktop, so it needs little RAM; LTS gets security updates for five years.
 4. Open https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise and download the **ISO, 64-bit, English**.
    **Why the evaluation:** it is free and needs no product key. It works for 90 days; it is meant for testing, not daily production work. When it expires, build a new one from the same ISO.
@@ -50,7 +50,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
    ![nat network](screenshots/s05-nat-network.png)
    **Check:** `osarch-net` is in the list.
 
-**Why NAT Network and not another mode:** the two machines must see each other *and* the internet, without sitting on the real office network. NAT alone lets each machine out but hides them from each other. Bridged gives each machine its own address on the real network; networks that filter by MAC address (like the Innotech teaching network) will not accept it. Host-only has no internet. NAT Network is the only mode that does everything. If you build this at home and need to reach the machine from another computer, Bridged is the alternative.
+**Why NAT Network and not another mode:** the two machines must see each other *and* the internet, without sitting on the real office network. NAT alone lets each machine out but hides them from each other. Bridged gives each machine its own address on the real network; networks that filter by MAC address (like the Innotech teaching network) will not accept it. Host-only has no internet. NAT Network is the best fit for this setup because it provides internet access and communication between guests without exposing them directly to the physical office network. If you build this at home and need to reach the machine from another computer, Bridged is the alternative.
 
 ---
 
@@ -59,8 +59,8 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 ### D1. Create it
 1. Click **New**.
 2. Name: `test-dev-vm`. ISO Image: choose the Ubuntu file.
-3. **Unattended Installation: Make sure this box is unchecked.**
-   **Why:** otherwise VirtualBox installs Ubuntu by itself with its own settings. Doing it by hand, you choose the user and see what happens. (If your wizard shows the box already ticked, leave it.)
+3. Unattended Installation: Make sure this box is unchecked before continuing.
+   **Why:** this allows you to complete the installation manually, choose your own username and password, and verify each installation step. If the box is already checked, uncheck it before proceeding.
    ![wizard](evidence/01-new-vm-wizard.png)
 4. Hardware: Base Memory `2048 MB`, Processors `2`.
    **Why:** 2 GB is enough for Ubuntu Server and leaves the laptop fast.
@@ -98,7 +98,7 @@ Ubuntu Server has no desktop and no Ctrl+Alt+T; the black screen after login *is
    ```bash
    { echo '$ uname -a'; uname -a; echo; echo '$ lsb_release -a'; lsb_release -a; echo; echo '$ ip -br a'; ip -br a; } | tee ~/04-guest-uname.txt
    ```
-   **Check:** a line `Linux … x86_64 GNU/Linux`, `Ubuntu 24.04…`, and an address `10.0.2.x`. Write the address down: [UBUNTU_IP].
+   **Check:** a line `Linux … x86_64 GNU/Linux`, `Ubuntu 26.04…`, and an address `10.0.2.x`. Write the address down: [UBUNTU_IP].
    The file is saved as `evidence/04-guest-uname.txt` (see "Getting files out" below).
 2. Check the disk is fully used:
    ```bash

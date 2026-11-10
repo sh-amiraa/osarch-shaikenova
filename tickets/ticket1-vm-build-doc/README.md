@@ -69,9 +69,9 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 
 **Why VirtualBox:** free, same on every host OS, supports TPM 2.0 for Windows 11 from version 7.0. VMware Workstation Pro, Hyper-V (not in Windows Home) and KVM/QEMU (Linux host only) were considered; details are in BUILD.md.
 
-**Both guests reach the internet and see each other.** `evidence/05-ping-between-guests.txt` holds, unedited: Ubuntu → Windows, Windows → Ubuntu, Ubuntu → internet, Windows → internet, all with 0% packet loss.
+**Network verification:** The current evidence confirms internet connectivity from both guests and successful communication from Windows to Ubuntu.
 
-**One thing that went wrong and how I fixed it.** [Write the real one. Example from my build: I could not copy output out of the VM window, because the mouse stayed captured by the VM. I released it with the host key (Right Ctrl), and saved command output with `| tee file.txt` instead of copying it by hand.]
+**One thing that went wrong and how I fixed it.** At first, I had trouble accessing the terminal output because the mouse cursor remained captured inside the virtual machine. I learned to release it using the Right Ctrl host key. I also discovered that saving command output directly to files using terminal redirection was more reliable than copying it manually.
 
 ## 4. Evidence
 

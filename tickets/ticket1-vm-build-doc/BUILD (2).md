@@ -90,7 +90,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
    **Check:** a prompt like `name@server:~$`.
    ![login](screenshots/s08-ubuntu-login.png)
 
-**If your mouse is stuck inside the machine:** press **Right Ctrl** (the "host key", shown in the bottom-right corner of the window). Ctrl+Alt+Delete does not release it.
+**If your mouse is stuck inside the machine:** press **Right Ctrl** (the "host key", shown in the bottom-right corner of the window). 
 
 ### D4. Look inside
 Ubuntu Server has no desktop and no Ctrl+Alt+T; the black screen after login *is* the terminal.

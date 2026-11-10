@@ -27,7 +27,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 | Windows 11 | 4 GB (Microsoft minimum) | 2 | 64 GB (Microsoft minimum) |
 | Both together | 6 GB | 4 | 89 GB |
 
-**Rule:** after giving 6 GB to the guests, the laptop must keep at least 6 GB. For my laptop: [X] GB total − 6 GB = [Z] GB left. If you have less than 12 GB RAM, do not run both guests at the same time. Free disk space must be more than 89 GB (disks grow up to their maximum).
+**Rule:** after giving 6 GB to the guests, the laptop must keep at least 6 GB. For my laptop: 16 GB total − 6 GB = 10 GB left. If you have less than 12 GB RAM, do not run both guests at the same time. Free disk space must be more than 89 GB (disks grow up to their maximum).
 
 ---
 

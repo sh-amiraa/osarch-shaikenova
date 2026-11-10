@@ -9,7 +9,6 @@
 
 ## 2. What was actually needed
 
-The real deliverable is **a document Aigerim can follow herself for the next hire**, not one working machine. She is not an IT person: she has a laptop and the internet, nothing else. Building the machine is the easy part; writing it so that it works for her is the job.
 
 **What the request left out, what I would ask, what I assumed instead**
 

@@ -110,12 +110,6 @@ Ubuntu Server has no desktop and no Ctrl+Alt+T; the black screen after login *is
    ```
    **Why `-r`:** it also resizes the file system; without it the size does not change.
 
-### Getting files out of the Ubuntu machine
-Copying from the black window is hard. Easiest: open it in an ordinary window with SSH.
-1. In the Ubuntu machine: `sudo apt install -y openssh-server`
-2. VirtualBox → Tools → Network → NAT Networks → `osarch-net` → **Port Forwarding** → add: Name `ssh`, Protocol `TCP`, Host IP `127.0.0.1`, Host Port `2222`, Guest IP `[UBUNTU_IP]`, Guest Port `22`.
-3. On the laptop, in PowerShell: `ssh -p 2222 yourusername@127.0.0.1`. Now you can select, copy and paste normally.
-
 ---
 
 ## Part E. Windows 11 machine

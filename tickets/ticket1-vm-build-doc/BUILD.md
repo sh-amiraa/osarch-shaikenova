@@ -193,7 +193,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 3. Do the same for `win11-eval`.
    ![snapshot list](evidence/06-snapshot-list.png)
    ![windows snapshot](screenshots/s15-windows-snapshot.png)
-   **Check:** `clean-base` appears above "Current State".
+   **Check:** `clean-install` appears above "Current State".
 
 ### Test the way back (so you know it works)
 1. Windows: start it, create a file `rollback-test.txt` on the desktop, shut down. In Snapshots, right-click `clean-install` → **Restore**. Start it.
@@ -224,7 +224,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 | Choice | Alternatives | Why this one |
 |---|---|---|
 | VirtualBox 7 | VMware Workstation Pro (free for personal use, needs account and its own licence terms); Hyper-V (built into Windows Pro/Enterprise, not Home, conflicts with other hypervisors); KVM/QEMU (Linux host only, hardest to learn) | Free for office use without the Extension Pack, same on every OS, supports TPM 2.0 |
-| NAT Network | NAT, Bridged, Host-only (Part C) | The only one with guest ↔ guest and internet and no exposure to the real network |
+| NAT Network | NAT, Bridged, Host-only (Part C) | Best fit: supports guest-to-guest communication and internet access while keeping guests separate from the physical network |
 | Dynamic disks | Fixed (pre-allocated) | Fixed is a little faster but would take 89 GB immediately; dynamic grows as needed. Risk: it can fill the laptop's disk, hence the 89 GB check |
 | Evaluation Windows | Licensed Windows | Free, no key to buy by mistake; limited to 90 days |
 
@@ -245,7 +245,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 | `screenshots/s11-windows-network.png` | Windows adapter: NAT Network `osarch-net` | E1 |
 | `screenshots/s13-windows-desktop.png` | Windows desktop after install | E2 |
 | `screenshots/s14-windows-tpm.png` | `tpm.msc` and `msinfo32` results | E2 |
-| `evidence/06-snapshot-list.png` | Ubuntu snapshot `clean-base` | G |
+| `evidence/06-snapshot-list.png` | Ubuntu snapshot `clean-install` | G |
 | `screenshots/s15-windows-snapshot.png` | Windows snapshot `clean-base` | G |
 
 The two text files `evidence/04-guest-uname.txt` and `evidence/05-ping-between-guests.txt` are produced in steps D4 and F.

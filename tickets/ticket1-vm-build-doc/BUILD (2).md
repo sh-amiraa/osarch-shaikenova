@@ -176,16 +176,16 @@ Save the command and its output each time (Ubuntu: `| tee -a ~/05.txt`; Windows:
 1. Shut the machines down properly: Ubuntu `sudo poweroff` (the password does not show while typing, that is normal); Windows **Start → Power → Shut down**.
    **Check:** both show **Powered Off** in VirtualBox.
    **Why:** a snapshot of a machine that is off is the safest.
-2. Select `test-dev-vm`, open the **Snapshots** tab (top right), click **Take**, name it `clean-base`, **OK**.
+2. Select `test-dev-vm`, open the **Snapshots** tab (top right), click **Take**, name it `clean-install`, **OK**.
 3. Do the same for `win11-eval`.
    ![snapshot list](evidence/06-snapshot-list.png)
    ![windows snapshot](screenshots/s15-windows-snapshot.png)
    **Check:** `clean-base` appears above "Current State".
 
 ### Test the way back (so you know it works)
-1. Windows: start it, create a file `rollback-test.txt` on the desktop, shut down. In Snapshots, right-click `clean-base` → **Restore**. Start it.
+1. Windows: start it, create a file `rollback-test.txt` on the desktop, shut down. In Snapshots, right-click `clean-install` → **Restore**. Start it.
    **Check:** the file is gone.
-2. Ubuntu: start it, run `sudo mv /etc/netplan/*.yaml /root/ && sudo reboot`. After the restart `ip -br a` shows no address. Shut down, right-click `clean-base` → **Restore**, start it. **Check:** the address `10.0.2.x` is back.
+2. Ubuntu: start it, run `sudo mv /etc/netplan/*.yaml /root/ && sudo reboot`. After the restart `ip -br a` shows no address. Shut down, right-click `clean-install` → **Restore**, start it. **Check:** the address `10.0.2.x` is back.
 
 **Never delete a machine while it is running, and never restore while it is running.** Always shut down first.
 

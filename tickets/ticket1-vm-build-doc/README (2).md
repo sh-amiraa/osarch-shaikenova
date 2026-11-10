@@ -53,7 +53,6 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 
 | Setting | Default | Mine | Why |
 |---|---|---|---|
-| Skip Unattended Installation | [state of the box in your wizard] | [yours] | [your reason, e.g. I choose the user and the disk layout myself and see every step] |
 | Network adapter | NAT | NAT Network `osarch-net` | Plain NAT isolates the two guests from each other; NAT Network lets them talk and still reach the internet without touching the real network |
 | Ubuntu RAM / CPU | [wizard value] | 2048 MB / 2 | Enough for a server install, leaves the host responsive |
 | Ubuntu disk | [wizard value] | 25 GB, dynamic | Room for updates and logs without taking 25 GB up front |

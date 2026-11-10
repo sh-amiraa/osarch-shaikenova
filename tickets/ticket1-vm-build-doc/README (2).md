@@ -83,7 +83,7 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 - [evidence/03-network-adapter.png](evidence/03-network-adapter.png) — the guest's adapter set to NAT Network `osarch-net`.
 - [evidence/04-guest-uname.txt](evidence/04-guest-uname.txt) — `uname -a` and `lsb_release -a` run inside the Ubuntu guest, command lines visible.
 - [evidence/05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) — Ubuntu ↔ Windows and each guest → internet, unedited.
-- [evidence/06-snapshot-list.png](evidence/06-snapshot-list.png) — the `clean-base` snapshot.
+- [evidence/06-snapshot-list.png](evidence/06-snapshot-list.png) — the `clean-install` snapshot.
 
 The step-by-step screenshots used in BUILD.md are in [screenshots/](screenshots/).
 

@@ -96,7 +96,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 Ubuntu Server has no desktop and no Ctrl+Alt+T; the black screen after login *is* the terminal.
 1. Type each command and press Enter. To save the output into a file at the same time:
    ```bash
-   { echo '$ uname -a'; uname -a; echo; echo '$ lsb_release -a'; lsb_release -a; } | tee ~/04-guest-uname.txt
+ `uname -a` to check the Linux system information. Then run `lsb_release -a` to check the installed Ubuntu version.
    ```
    **Check:** the output confirms the Linux kernel architecture and the installed Ubuntu version.
    The file is saved as `evidence/04-guest-uname.txt` (see "Getting files out" below).

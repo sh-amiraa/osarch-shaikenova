@@ -224,7 +224,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 
 ---
 
-## Appendix. List of screenshots
+## List of screenshots:
 
 | File | Shows | Step |
 |---|---|---|

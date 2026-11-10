@@ -32,8 +32,8 @@
 
 | | Total | Host at idle | Ubuntu guest | Windows guest | Headroom |
 |---|---|---|---|---|---|
-| RAM | [X] GB | about [Y] GB | 2 GB | 4 GB (Microsoft minimum) | [X] − [Y] − 6 = **[Z] GB** |
-| Disk (maximum) | [free] GB free | — | 25 GB | 64 GB (Microsoft minimum) | [free] − 89 = **[Z] GB** |
+| RAM | 16 GB | about 8.6 GB | 2 GB | 4 GB | 16 − 8.6 − 6 = **1.4 GB** |
+| Disk (maximum) | 810 GB free | — | 25 GB | 64 GB | 810 − 89 = **721 GB** |
 
 Disks are dynamic (they grow as used), so the free-disk check is against the *maximum* sizes. [Add one sentence: what happened to host memory with both guests running.]
 

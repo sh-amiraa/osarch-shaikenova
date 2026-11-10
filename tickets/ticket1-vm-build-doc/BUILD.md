@@ -145,7 +145,7 @@ Copying from the black window is hard. Easiest: open it in an ordinary window wi
 8. Menu **Devices → Shared Clipboard → Bidirectional** so you can copy text between laptop and machine.
 
 **Check the security chip:** press Win+R, type `tpm.msc`, Enter → "The TPM is ready for use", Version 2.0. Then Win+R, `msinfo32` → **Secure Boot State: On**, **BIOS Mode: UEFI**.
-![tpm check](screenshots/s14-windows-tpm-secureboot.png)
+![tpm check](screenshots/s14-windows-tpm.png)
 
 **Allow ping into Windows** (Windows blocks it by default, and we need it for the next part): click Start, type `PowerShell`, right-click → **Run as administrator**, run:
 ```powershell
@@ -244,7 +244,7 @@ Start both machines. Everything below goes into **one** file, unedited: `evidenc
 | `screenshots/s10-windows-tpm.png` | Windows → Motherboard: EFI, TPM v2.0, Secure Boot | E1 |
 | `screenshots/s11-windows-network.png` | Windows adapter: NAT Network `osarch-net` | E1 |
 | `screenshots/s13-windows-desktop.png` | Windows desktop after install | E2 |
-| `screenshots/s14-windows-tpm-secureboot.png` | `tpm.msc` and `msinfo32` results | E2 |
+| `screenshots/s14-windows-tpm.png` | `tpm.msc` and `msinfo32` results | E2 |
 | `evidence/06-snapshot-list.png` | Ubuntu snapshot `clean-base` | G |
 | `screenshots/s15-windows-snapshot.png` | Windows snapshot `clean-base` | G |
 

@@ -54,13 +54,12 @@ Disks are dynamic (they grow as used), so the free-disk check is against the *ma
 | Setting | Default | Mine | Why |
 |---|---|---|---|
 | Network adapter | NAT | NAT Network `osarch-net` | Plain NAT isolates the two guests from each other; NAT Network lets them talk and still reach the internet without touching the real network |
-| Ubuntu RAM / CPU | [wizard value] | 2048 MB / 2 | Enough for a server install, leaves the host responsive |
-| Ubuntu disk | [wizard value] | 25 GB, dynamic | Room for updates and logs without taking 25 GB up front |
-| Windows RAM / CPU / disk | [wizard value] | 4096 MB / 2 / 64 GB dynamic | Windows 11 minimums |
-| Windows firmware | [wizard value] | EFI, TPM 2.0, Secure Boot | Windows 11 refuses to install without them |
+| Ubuntu RAM / CPU | 1024 MB / 1 core | 2048 MB / 2 | Enough for a server install, leaves the host responsive |
+| Ubuntu disk | 10 GB | 25 GB, dynamic | Room for updates and logs without taking 25 GB up front |
+| Windows RAM / CPU / disk | 2048 MB / 1 core / 50 GB | 4096 MB / 2 / 64 GB dynamic | Windows 11 minimums |
+| Windows firmware | Legacy BIOS | EFI, TPM 2.0, Secure Boot | Windows 11 refuses to install without them |
 | Windows Firewall | blocks ping | allow ICMPv4 echo (lab rule) | Needed to test guest → guest |
-| VirtualBox Extension Pack | not installed | not installed | Free only for personal/educational use; an office would need a paid licence |
-| Snapshots | none | `clean-base` on both guests | Lets Aigerim undo any mistake |
+| Snapshots | none | `clean-install` on both guests | Lets Aigerim undo any mistake |
 
 **Why NAT Network and not the alternatives**
 - *NAT*: internet works, but the guests cannot see each other: fails the requirement.

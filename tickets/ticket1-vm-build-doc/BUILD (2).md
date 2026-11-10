@@ -59,7 +59,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 ### D1. Create it
 1. Click **New**.
 2. Name: `test-dev-vm`. ISO Image: choose the Ubuntu file.
-3. **Tick "Skip Unattended Installation".**
+3. **Unattended Installation: Make sure this box is unchecked.**
    **Why:** otherwise VirtualBox installs Ubuntu by itself with its own settings. Doing it by hand, you choose the user and see what happens. (If your wizard shows the box already ticked, leave it.)
    ![wizard](evidence/01-new-vm-wizard.png)
 4. Hardware: Base Memory `2048 MB`, Processors `2`.

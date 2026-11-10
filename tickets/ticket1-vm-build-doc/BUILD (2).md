@@ -2,7 +2,6 @@
 
 You need a laptop and an internet connection, nothing else.
 **What you get:** two virtual machines (small "computers inside your computer"). They share a private network, both reach the internet, both can ping each other, and both have a saved clean state you can go back to if anything breaks.
-**Time:** about 2–3 hours, most of it downloads and installs.
 
 How to read this: every step is one action. After most steps there is a **Check** (how you know it worked) and a **Why** (why this option and not another).
 The step-by-step screenshots used in this document are in [screenshots/](screenshots/) (the six required proof files are in [evidence/](evidence/)). Each picture is shown under the step it belongs to; its file name is written in the step, and the full list is at the end of this document.

@@ -45,7 +45,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
 
 ## Part C. Create the private network (do this before the machines)
 
-1. Open VirtualBox → menu **Tools → Network** → tab **NAT Networks** (older versions: File → Tools → Network Manager) → **Create**.
+1. Open VirtualBox → menu **Tools → Network** → tab **NAT Networks**  → **Create**.
 2. Set Name `osarch-net`, IPv4 Prefix `10.0.2.0/24`, tick **Enable DHCP** → **Apply**.
    ![nat network](screenshots/s05-nat-network.png)
    **Check:** `osarch-net` is in the list.

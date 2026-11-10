@@ -41,13 +41,7 @@ Words used: **host** = your real laptop. **Guest** = a virtual machine. **ISO** 
    **Why Server and LTS:** no desktop, so it needs little RAM; LTS gets security updates for five years.
 4. Open https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise and download the **ISO, 64-bit, English**.
    **Why the evaluation:** it is free and needs no product key. It works for 90 days; it is meant for testing, not daily production work. When it expires, build a new one from the same ISO.
-5. Check the Ubuntu file is not damaged: open PowerShell in the Downloads folder and run
-   ```powershell
-   Get-FileHash .\ubuntu-24.04-live-server-amd64.iso -Algorithm SHA256
-   ```
-   **Check:** the long code equals the SHA256 on the Ubuntu download page.
 
----
 
 ## Part C. Create the private network (do this before the machines)
 

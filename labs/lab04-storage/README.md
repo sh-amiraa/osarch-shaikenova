@@ -178,3 +178,18 @@ No, RAID 1 does not help. The mirror copies every write to both disks at the sam
 3. **Erasing the partition table did not erase the data.** On the second attempt `mkfs.ext4` warned that `/dev/md0` already contained an ext4 file system labelled `mirror` from the first attempt. `wipefs` only removed the signatures at the start of the disks; the new partitions and array started at the same offsets, so the old file system was still there. I answered `y` to overwrite it.
 4. **Pasting a multi-line loop failed.** The terminal inserted `^[[200~` (bracketed paste) before the `for` loop, so bash saw a syntax error and the next line ran with an empty `$d`, as `parted /dev/`. It failed safely. Fix: `bind 'set enable-bracketed-paste off'` and pasting the loop as a single line.
 5. **The Windows VM would not start** (`VERR_FILE_NOT_FOUND` for `lab04-win.vdi`). The disk file had been moved to the host's trash. Fix: restored it from `~/.local/share/Trash/files/` to the VM folder.
+
+## Evidence
+
+
+lsblk-before.txt — shows three empty 1 GB disks before partitioning.
+
+array-healthy.txt — proves the RAID 1 array was healthy with [UU] and two active devices.
+
+array-degraded.txt — proves one disk failed and the array continued working in degraded mode [U_].
+
+checksum-before.txt — records SHA-256 checksums before disk failure.
+
+checksum-after-failure.txt — proves the checksums remained identical after disk failure.
+
+array-rebuilt.txt — proves the third disk was added and the array returned to [UU].

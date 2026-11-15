@@ -1,6 +1,6 @@
 # Lab 4 — Partition, mirror, fail, recover
 
-Pair: Dinmukhamed_M + Amira · Date: 11.11.2026 · Hypervisor: VirtualBox
+Pair: Dinmukhamed Muratbek + Amira Shaikenova · Date: 11.11.2026 · Hypervisor: VirtualBox (Windows 11 and Ubuntu guests)
 
 ## Windows
 

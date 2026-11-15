@@ -17,6 +17,8 @@ $ sudo mdadm --detail /dev/md0
      Total Devices : 1
        Persistence : Superblock is persistent
 
+     Intent Bitmap : Internal
+
        Update Time : Wed Nov 11 15:58:39 2026
              State : clean, degraded
     Active Devices : 1

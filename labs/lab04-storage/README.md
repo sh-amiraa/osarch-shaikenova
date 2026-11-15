@@ -181,15 +181,9 @@ No, RAID 1 does not help. The mirror copies every write to both disks at the sam
 
 ## Evidence
 
-
-lsblk-before.txt — shows three empty 1 GB disks before partitioning.
-
-array-healthy.txt — proves the RAID 1 array was healthy with [UU] and two active devices.
-
-array-degraded.txt — proves one disk failed and the array continued working in degraded mode [U_].
-
-checksum-before.txt — records SHA-256 checksums before disk failure.
-
-checksum-after-failure.txt — proves the checksums remained identical after disk failure.
-
-array-rebuilt.txt — proves the third disk was added and the array returned to [UU].
+- [evidence/lsblk-before.txt](evidence/lsblk-before.txt) — shows three empty 1 GB disks before partitioning.
+- [evidence/array-healthy.txt](evidence/array-healthy.txt) — shows the healthy RAID 1 array with two active devices `[UU]`.
+- [evidence/array-degraded.txt](evidence/array-degraded.txt) — shows the degraded RAID 1 array after one disk failed `[U_]`.
+- [evidence/checksum-before.txt](evidence/checksum-before.txt) — records SHA-256 checksums before disk failure.
+- [evidence/checksum-after-failure.txt](evidence/checksum-after-failure.txt) — proves that checksums remained identical after disk failure.
+- [evidence/array-rebuilt.txt](evidence/array-rebuilt.txt) — shows the rebuilt RAID 1 array with two active devices `[UU]` after adding the third disk.

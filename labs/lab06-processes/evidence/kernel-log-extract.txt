@@ -1,0 +1,4 @@
+# Command executed:
+# journalctl -k --since "30 min ago" | grep -i -E -B3 -A8 "out of memory|oom-kill"
+
+No OOM events found in kernel log (no "Out of memory" or "oom-kill" entries recorded during the stress-ng memory pressure test).

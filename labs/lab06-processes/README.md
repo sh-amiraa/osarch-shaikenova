@@ -140,8 +140,8 @@ Explanation: the empty result is valid — the Windows guest was not put under m
 
 ## Evidence files
 
-- `evidence/task-manager.png`
-- `evidence/process-explorer.png`
-- `evidence/htop.png`
-- `evidence/memory-pressure.txt`
-- `evidence/kernel-log-extract.txt`
+- [evidence/task-manager.png](evidence/task-manager.png) — Task Manager (Details tab) with the VBoxService.exe row (PID 1888) and the columns PID, private working set, working set, commit size, handles and threads.
+- [evidence/process-explorer.png](evidence/process-explorer.png) — Process Explorer with the same process (PID 1888): the process tree with its parent services.exe (PID 876), the memory, handles and threads columns, and the lower pane listing the open handles.
+- [evidence/htop.png](evidence/htop.png) — htop tree view on Ubuntu with the VBoxService process (PID 2089, PPID 1) highlighted, showing VIRT, RES, SHR, CPU% and MEM%.
+- [evidence/memory-pressure.txt](evidence/memory-pressure.txt) — `free -h` recorded every 3 seconds: the BEFORE block (18:37:39), the four stress-ng loads (worst available memory 15 MiB, swap peak 1.4 GiB) and the AFTER block (19:26:07).
+- [evidence/kernel-log-extract.txt](evidence/kernel-log-extract.txt) — output of the `journalctl -k` search for "out of memory" / "oom-kill"; the file is empty, which shows that the OOM killer did not fire during the test.

@@ -1,6 +1,6 @@
 # Lab 6 — Live processes and memory pressure
 
-Pair: <ЗАПОЛНИ: имя 1> + <ЗАПОЛНИ: имя 2> · Date: 22 November 2026 · Guests: Ubuntu <ЗАПОЛНИ: версия, команда `lsb_release -d`> (1.6 GiB RAM and 2.0 GiB swap as reported by `free -h`) / Windows 11 Enterprise Evaluation, build 26100 (RAM: <ЗАПОЛНИ: ГБ Windows-гостя>)
+Pair: Dinmukhamed + Amira · Date: 22.11.2026 · Guests: Ubuntu 26.04.1 LTS (1.6 GiB RAM and 2.0 GiB swap as reported by `free -h`) / Windows 11 Enterprise Evaluation, build 26100 (RAM: 4096 MB)
 
 Times in Part 2 are the Ubuntu guest clock (UTC); Almaty is UTC+5.
 
@@ -19,9 +19,9 @@ Evidence: `evidence/task-manager.png`, `evidence/process-explorer.png`, `evidenc
 | "Memory" as shown by default | 884 K ("Memory (private working set)") | 9,412 K (Working Set) | 3816 K (RES) |
 | Private memory | 884 K (private working set); Commit size 2,464 K | Private Bytes 2,476 K | no column; roughly RES − SHR = 3816 − 3400 = 416 K |
 | Working set / RES | 9,412 K (Working set (memory)) | 9,412 K (Working Set) | RES 3816 K (SHR 3400 K) |
-| Virtual size | — (not shown; closest is Commit size 2,464 K) | 2,151,781,088 K (Virtual Size) | VIRT 349M (ps vsz: <ЗАПОЛНИ: из вывода ps>) |
-| Handles / file descriptors | 200 | 202 | <ЗАПОЛНИ: вывод `ls /proc/2089/fd \| wc -l`> |
-| Threads | 14 | 15 | <ЗАПОЛНИ: NLWP из вывода ps> |
+| Virtual size | — (not shown; closest is Commit size 2,464 K) | 2,151,781,088 K (Virtual Size) | VIRT 349M (ps vsz: 357636) |
+| Handles / file descriptors | 200 | 202 | 0 |
+| Threads | 14 | 15 | 9 |
 
 Other htop values for the same row: PRI 20, NI 0, state S, CPU% 0.0, MEM% 0.2, user root.
 
@@ -30,10 +30,24 @@ Note: Task Manager and Process Explorer show the same process (VBoxService.exe, 
 Command-line output (Ubuntu, same process, PID 2089):
 
 ```
-<ЗАПОЛНИ: вставь вывод: ps -o pid,ppid,user,rss,vsz,nlwp,cmd -p 2089>
-<ЗАПОЛНИ: вставь вывод: ls /proc/2089/fd | wc -l>
-<ЗАПОЛНИ: вставь первые строки: sudo ls -l /proc/2089/fd | head>
+ticket1@ticket1:~$ ps -o pid,ppid,user,rss,vsz,nlwp,cmd -p 2089
+    PID    PPID USER       RSS    VSZ NLWP CMD
+   2089       1 root      3816 357636    9 /usr/sbin/VBoxService
+
+ticket1@ticket1:~$ ls/proc/2089/fd | wc -l
+-bash: ls/proc/2089/fd: No such file or directory
+0
+
+ticket1@ticket1:~$ sudo ls -l /proc/2089/fd | head
+[sudo: authenticate] Password:
+total 0
+lrwx------ 1 root root 64 Nov 22 17:06 0 -> /dev/null
+lrwx------ 1 root root 64 Nov 22 17:06 1 -> /dev/null
+lrwx------ 1 root root 64 Nov 22 17:06 2 -> /dev/null
+lrwx------ 1 root root 64 Nov 22 17:06 3 -> /dev/vboxguest
+lrwx------+1 root root 64 Nov 22 17:06 4 -> socket:[18955]
 ```
+Note: Process 2089 was no longer active when this check was run (and `ls/proc/2089/fd` missed a space after `ls`), so `/proc/2089/fd` could not be listed and `wc -l` returned `0`.
 
 ### Where the tools disagree
 

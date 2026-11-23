@@ -20,7 +20,7 @@ Evidence: `evidence/task-manager.png`, `evidence/process-explorer.png`, `evidenc
 | Private memory | 884 K (private working set); Commit size 2,464 K | Private Bytes 2,476 K | no column; roughly RES − SHR = 3816 − 3400 = 416 K |
 | Working set / RES | 9,412 K (Working set (memory)) | 9,412 K (Working Set) | RES 3816 K (SHR 3400 K) |
 | Virtual size | — (not shown; closest is Commit size 2,464 K) | 2,151,781,088 K (Virtual Size) | VIRT 349M (ps vsz: 357636) |
-| Handles / file descriptors | 200 | 202 | 0 |
+| Handles / file descriptors | 200 | 202 | Not displayed in htop; checked via /proc/2089/fd |
 | Threads | 14 | 15 | 9 |
 
 Other htop values for the same row: PRI 20, NI 0, state S, CPU% 0.0, MEM% 0.2, user root.
@@ -96,15 +96,15 @@ What happened (times from `memory-pressure.txt`):
 
 ### What the kernel did
 
-Evidence: `evidence/kernel-log-extract.txt` (empty, 0 bytes).
+Evidence: `evidence/kernel-log-extract.txt`. The file contains the executed command and confirms that no OOM events were found.
 
 Command:
 
 ```
-journalctl -k -b 0 | grep -i -E -B3 -A8 "out of memory|oom-kill" > kernel-log-extract.txt
+journalctl -k --since "30 min ago" | grep -i -E -B3 -A8 "out of memory|oom-kill"
 ```
 
-Result: the output was **empty** — the kernel log has no "Out of memory: Killed process ..." or "oom-kill:" lines, so the OOM killer did **not** fire in our test, even at 150% of RAM.
+Result: the search returned no matching lines - the kernel log contains no "Out of memory: Killed process ..." or "oom-kill:" entries, so the OOM killer did **not** fire during our test, even at 150% of RAM.
 
 Explanation: the machine had 1.6 GiB of RAM and 2.0 GiB of swap. Under load, available memory went down to 15 MiB, but the swap never filled up (the peak was 1.4 GiB out of 2.0 GiB), so the kernel could always free pages by writing them to swap. The OOM killer is only a last resort, when the kernel cannot reclaim enough memory; here the only visible effect was heavy swapping (thrashing), which explains the lags and the freezes of the guest.
 
@@ -144,4 +144,4 @@ Explanation: the empty result is valid — the Windows guest was not put under m
 - [evidence/process-explorer.png](evidence/process-explorer.png) — Process Explorer with the same process (PID 1888): the process tree with its parent services.exe (PID 876), the memory, handles and threads columns, and the lower pane listing the open handles.
 - [evidence/htop.png](evidence/htop.png) — htop tree view on Ubuntu with the VBoxService process (PID 2089, PPID 1) highlighted, showing VIRT, RES, SHR, CPU% and MEM%.
 - [evidence/memory-pressure.txt](evidence/memory-pressure.txt) — `free -h` recorded every 3 seconds: the BEFORE block (18:37:39), the four stress-ng loads (worst available memory 15 MiB, swap peak 1.4 GiB) and the AFTER block (19:26:07).
-- [evidence/kernel-log-extract.txt](evidence/kernel-log-extract.txt) — output of the `journalctl -k` search for "out of memory" / "oom-kill"; the file is empty, which shows that the OOM killer did not fire during the test.
+- [evidence/kernel-log-extract.txt](evidence/kernel-log-extract.txt) — the executed `journalctl -k` search command and its result; no OOM events were found during the memory pressure test.

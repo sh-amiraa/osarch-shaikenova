@@ -22,7 +22,7 @@ Compatibility and power were checked on PCPartPicker (links in [evidence/pcpartp
 
 **Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The 177,736 KZT saved compared to the 32 GB kit was allocated to a **UPS** and a better monitor (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand, instead of the cheapest 24" one. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would never use it.
 
-**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
+**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
 
 The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 

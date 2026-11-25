@@ -25,9 +25,5 @@ When the same part is used in several builds, one screenshot covers all of them.
 | accountant-ups.png | APC BV650I-GR | accountant |
 | sales-webcam.png | Logitech C270 | sales |
 | sales-headset.png | Logitech H390 | sales |
-| prebuilt-accountant.png | PULSER Eco 100 | Answer 2 |
-| prebuilt-sales.png | PULSER Compact 15 | Answer 2 |
-| prebuilt-webdev.png | PULSER Advanced 379 | Answer 2 |
-| prebuilt-designer.png | PULSER Advanced 377 | Answer 2 |
 
 Ubuntu 24.04 LTS is free (0 KZT), so it has no screenshot; the download page is linked in budget.csv.

@@ -26,10 +26,6 @@ On e-katalog.kz / alfa.kz screenshots the page lists Kazakhstan shops; the shop 
 | sales-headset.png | Logitech H390 | Kaspi.kz, 12,989 | sales |
 | designer-monitor.png | ASUS ProArt PA278CV | Forcecom.kz, 240,520 — **not used**: out of stock and over budget | — |
 | ssd-wd-sn850x.png | WD Black SN850X 1 TB | **not used**: "Товар устарел" (no longer sold) | — |
-| prebuilt-accountant.png | PULSER Eco 100 | see prebuilt.csv | Answer 2 |
-| prebuilt-sales.png | PULSER Compact 15 | see prebuilt.csv | Answer 2 |
-| prebuilt-webdev.png | PULSER Advanced 379 | see prebuilt.csv | Answer 2 |
-| prebuilt-designer.png | PULSER Advanced 377 | see prebuilt.csv | Answer 2 |
 
 Ubuntu 24.04 LTS is free (0 KZT), so it has no screenshot; the download page is linked in budget.csv.
 Two monitors were out of stock on the day of the quote (Dell S2725DS at DNS, ASUS ProArt at Forcecom). The Dell is a common model and is sold by other Kazakhstan shops too; it would be ordered when it arrives.

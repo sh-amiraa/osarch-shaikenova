@@ -20,13 +20,13 @@ Compatibility and power were checked on PCPartPicker (links in [evidence/pcpartp
 
 **Bottleneck:** not the CPU and not the memory. 1C and Excel use 1–2 cores and 4–6 GB of RAM. What really "runs out" for an accountant is: (1) **data safety** — a power cut in the middle of saving the 1C database can damage it, and (2) **the screen and the eyes** — 8 hours of small numbers every day. Also the software decides the OS: 1C, NCALayer and bank clients need **Windows**.
 
-**Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The ~77,000 KZT saved compared to 32 GB went to a **UPS** (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand, instead of the cheapest 24" one. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would never use it.
+**Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The 177,736 KZT saved compared to the 32 GB kit was allocated to a **UPS** and a better monitor (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand, instead of the cheapest 24" one. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would never use it.
 
 **Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
 
 The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
-**Total:** 610,004 KZT (budget.csv, rows 2–12)
+**Total:** 632,102 KZT (budget.csv, rows 2–12)
 
 ---
 
@@ -40,7 +40,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2425H 23.8" · Windows 11 Pro · Logitech MK270 · Logitech C270 webcam · Logitech H390 headset.
 
-**Total:** 655,941 KZT (budget.csv, rows 13–24)
+**Total:** 762,500 KZT (budget.csv, rows 13–24)
 
 ---
 
@@ -54,7 +54,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Parts:** Ryzen 7 7700 OEM · DeepCool AK400 cooler (OEM CPU comes without one) · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2725DS 27" 1440p · Ubuntu 24.04 LTS · Logitech MK270.
 
-**Total:** 704,007 KZT (budget.csv, rows 25–35)
+**Total:** 705,148 KZT (budget.csv, rows 25–35)
 
 ---
 
@@ -68,7 +68,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · ASUS ProArt PA278CV 27" · Windows 11 Pro · Logitech MK270.
 
-**Total:** 816,280 KZT (budget.csv, rows 36–45)
+**Total:** 838,649 KZT (budget.csv, rows 36–45)
 
 ---
 
@@ -90,12 +90,12 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 | Role | Total, KZT |
 |---|---:|
-| Accountant | 610,004 |
-| Sales manager | 655,941 |
-| Web developer | 704,007 |
-| Designer | 816,280 |
-| **Grand total** | **2,786,232** |
+| Accountant | 632,102 |
+| Sales manager | 762,500 |
+| Web developer | 705,148 |
+| Designer | 838,649 |
+| **Grand total** | **2,938,399** |
 | Budget | 3,000,000 |
-| **Reserve** | **213,768 (≈7%)** |
+| **Remaining budget** | **61,601 (≈2.1%)** |
 
 The reserve is not "free money". It covers: price changes between the quote and the purchase (memory and SSD prices move a lot within a month), delivery, extra cables (HDMI/DP, power strips). If after buying everything the reserve is still there, the first thing to buy is the designer's video card.

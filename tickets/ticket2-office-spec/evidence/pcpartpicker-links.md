@@ -6,10 +6,10 @@ Monitors, OS, keyboard/mouse, UPS, headset and webcam are not in these lists (th
 
 | Build | PCPartPicker list | Estimated wattage | Compatibility |
 |---|---|---|---|
-| Accountant | [https://pcpartpicker.com/list/XXXXXX](https://pcpartpicker.com/list/kh3DmL) | 149 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
-| Sales manager | [https://pcpartpicker.com/list/XXXXXX](https://pcpartpicker.com/list/Xt3DmL) | 164 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
-| Web developer | [https://pcpartpicker.com/list/XXXXXX](https://pcpartpicker.com/list/DjG49K) | 174 W | no issues |
-| Designer | [https://pcpartpicker.com/list/XXXXXX ](https://pcpartpicker.com/list/qXfByF) | 164 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
+| Accountant | [Accountant build](https://pcpartpicker.com/list/kh3DmL) | 149 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
+| Sales manager | [Sales manager build](https://pcpartpicker.com/list/Xt3DmL) | 164 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
+| Web developer | [Web developer build](https://pcpartpicker.com/list/DjG49K) | 174 W | no issues |
+| Designer | [Designer build](https://pcpartpicker.com/list/qXfByF) | 164 W | Warning: The MSI PRO B650M-P Micro ATX AM5 Motherboard supports the AMD Ryzen 5 8600G 4.3 GHz 6-Core Processor with BIOS version 7E27v16. If the motherboard is using an older BIOS version, updating the BIOS will be necessary to support the CPU. |
 
 Notes:
 - PCPartPicker is a US site, so some parts sold in Kazakhstan may be missing. If a part was missing, I used the closest part of the same type and size (written in the list's notes). The real part is in budget.csv.

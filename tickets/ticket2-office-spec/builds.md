@@ -20,7 +20,7 @@ Compatibility and power were checked on PCPartPicker (links in [evidence/pcpartp
 
 **Bottleneck:** not the CPU and not the memory. 1C and Excel use 1–2 cores and 4–6 GB of RAM. What really "runs out" for an accountant is: (1) **data safety** — a power cut in the middle of saving the 1C database can damage it, and (2) **the screen and the eyes** — 8 hours of small numbers every day. Also the software decides the OS: 1C, NCALayer and bank clients need **Windows**.
 
-**Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The 177,736 KZT saved compared to the 32 GB kit was allocated to a **UPS** and a better monitor (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand, instead of the cheapest 24" one. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would never use it.
+**Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The **62,694 KZT saved** compared to the 32 GB kit helped keep the accountant's build within budget while allowing me to include a **UPS** (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would not benefit enough from it to justify the extra cost.
 
 **Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
 
@@ -38,9 +38,9 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Trade-off:** same cheap CPU as the accountant (Ryzen 5 8600G — 6 cores are more than enough for tabs and video), but **32 GB** of memory instead of 16. To pay for it I took the cheaper monitor **Dell S2425H** (no height stand, but it has speakers) — the sales manager looks at the CRM, not at colours. I also added a **headset with a noise-cancelling mic** and a **webcam**, because bad sound on a call loses a customer faster than a slow PC. The alternative I did not take: Ryzen 7 — more cores would not help a browser that is waiting for memory.
 
-**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2425H 23.8" · Windows 11 Pro · Logitech MK270 · Logitech C270 webcam · Logitech H390 headset.
+**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2425H 23.8" · Windows 11 Pro · Logitech MK270 · Logitech C270 webcam · Logitech H390 headset.
 
-**Total:** 762,500 KZT (budget.csv, rows 13–24)
+**Total:** 647,458 KZT (budget.csv, rows 13–24)
 
 ---
 
@@ -50,7 +50,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Bottleneck:** **memory first, then CPU cores, then SSD speed.** Rough count: Docker stack 6–8 GB, a VM 4–8 GB, browsers with DevTools 4–6 GB, VS Code + language servers 2 GB, OS 2–3 GB → 18–27 GB. 16 GB would swap all day. When code is built (`npm run build`, `docker build`) all cores work, so 8 cores help. Docker images and `node_modules` are thousands of small files, so a fast SSD with a DRAM cache helps.
 
-**Trade-off:** I gave this person the **only 8-core CPU** (Ryzen 7 7700) and a faster SSD (WD SN850X instead of NV3). The OS is **Ubuntu 24.04 LTS** — it is free and legal (GPL licence), Docker runs natively on Linux without a hidden VM (on Windows, Docker uses WSL2, which eats extra RAM), and production servers are Linux too. This saves ~62,000 KZT for Windows. What I gave up: **64 GB** of memory — another 2×16 GB kit costs ~230,000 KZT, which the budget cannot take now. But the board has **two free memory slots**, so 64 GB is a simple upgrade later. No video card: the 7700 has a small built-in GPU, enough for the monitor. A 27" 1440p monitor, because code + browser side by side need horizontal space.
+**Trade-off:** I gave this person the **only 8-core CPU** (Ryzen 7 7700) and a faster SSD (WD SN850X instead of NV3). The OS is **Ubuntu 24.04 LTS** — it is free and open-source, Docker runs natively on Linux without a hidden VM (on Windows, Docker uses WSL2, which uses additional system resources), and production servers commonly use Linux. This saves **70,657 KZT** compared with a Windows 11 Pro licence. What I gave up: **64 GB** of memory — another 2×16 GB kit costs 230,168 KZT, which the budget cannot take now. But the board has **two free memory slots**, so 64 GB is a simple upgrade later. No video card: the 7700 has a small built-in GPU, enough for the monitor. A 27" 1440p monitor, because code + browser side by side need horizontal space.
 
 **Parts:** Ryzen 7 7700 OEM · DeepCool AK400 cooler (OEM CPU comes without one) · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2725DS 27" 1440p · Ubuntu 24.04 LTS · Logitech MK270.
 
@@ -64,9 +64,9 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Bottleneck:** **the monitor first, then memory.** A designer's work is wrong if the colours are wrong — a cheap office monitor shows ~70% sRGB, so the designer picks colours that look different everywhere else. Big Photoshop files and history steps sit in RAM; with 16 GB Photoshop starts using the scratch disk. GPU matters for some effects and for video export, but for 2D design it is not the first limit.
 
-**Trade-off:** the biggest single part of this build is the **ASUS ProArt PA278CV** (27", 1440p, 100% sRGB, factory calibrated, ~213,000 KZT) + 32 GB RAM + the fast SSD (scratch disk). What I gave up: a **separate video card**. The 8600G's Radeon 760M runs Photoshop's GPU features, but it is slower for heavy filters and video export, and it borrows 2–4 GB from system RAM. The alternative I did not take: an RTX 5060 8 GB (~180,000–200,000 KZT) now. I did not take it because (1) we do not know yet if the designer does video at all (question to Daniyar), and (2) memory/SSD prices in Kazakhstan change every month, so I keep a reserve. The PSU (550 W) and the free PCIe x16 slot are ready for that card — it is the first planned upgrade.
+**Trade-off:** the biggest single part of this build is the **ASUS ProArt PA278CV** (27", 1440p, 100% sRGB, factory calibrated, 240,520 KZT) + 32 GB RAM + the fast SSD (scratch disk).
 
-**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · ASUS ProArt PA278CV 27" · Windows 11 Pro · Logitech MK270.
+**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · ASUS ProArt PA278CV 27" · Windows 11 Pro · Logitech MK270.
 
 **Total:** 838,649 KZT (budget.csv, rows 36–45)
 
@@ -91,11 +91,11 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 | Role | Total, KZT |
 |---|---:|
 | Accountant | 632,102 |
-| Sales manager | 762,500 |
+| Sales manager | 647,458 |
 | Web developer | 705,148 |
 | Designer | 838,649 |
-| **Grand total** | **2,938,399** |
+| **Grand total** | **2,823,357** |
 | Budget | 3,000,000 |
-| **Remaining budget** | **61,601 (≈2.1%)** |
+| **Remaining budget** | **176,643 (≈5.9%)** |
 
 The reserve is not "free money". It covers: price changes between the quote and the purchase (memory and SSD prices move a lot within a month), delivery, extra cables (HDMI/DP, power strips). If after buying everything the reserve is still there, the first thing to buy is the designer's video card.

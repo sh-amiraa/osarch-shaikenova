@@ -58,13 +58,13 @@ The four builds with Load · Bottleneck · Trade-off · Total are in **[builds.m
 
 | Role | CPU | RAM | SSD | Monitor | OS | Total, KZT |
 |---|---|---|---|---|---|---:|
-| Accountant | Ryzen 5 8600G | 16 GB | Kingston NV3 1 TB | Dell P2425H 24" | Win 11 Pro | 610,004 |
-| Sales | Ryzen 5 8600G | 32 GB | Kingston NV3 1 TB | Dell S2425H 24" | Win 11 Pro | 655,941 |
-| Web developer | Ryzen 7 7700 | 32 GB | WD SN850X 1 TB | Dell S2725DS 27" 1440p | Ubuntu 24.04 | 704,007 |
-| Designer | Ryzen 5 8600G | 32 GB | WD SN850X 1 TB | ASUS ProArt PA278CV 27" | Win 11 Pro | 816,280 |
-| **Grand total** | | | | | | **2,786,232** |
+| Accountant | Ryzen 5 8600G | 16 GB | Kingston NV3 1 TB | Dell P2425H 24" | Win 11 Pro | 632,102 |
+| Sales | Ryzen 5 8600G | 32 GB | Kingston NV3 1 TB | Dell S2425H 24" | Win 11 Pro | 762,500 |
+| Web developer | Ryzen 7 7700 | 32 GB | WD SN850X 1 TB | Dell S2725DS 27" 1440p | Ubuntu 24.04 | 705,148 |
+| Designer | Ryzen 5 8600G | 32 GB | WD SN850X 1 TB | ASUS ProArt PA278CV 27" | Win 11 Pro | 838,649 |
+| **Grand total** | | | | | | **2,938,399** |
 
-Grand total is **2,786,232 KZT ≤ 3,000,000 KZT**, including monitors, operating systems, keyboards/mice, UPS, headset and webcam. Reserve: 213,768 KZT.
+Grand total is **2,938,399 KZT ≤ 3,000,000 KZT**, including monitors, operating systems, keyboards/mice, UPS, headset and webcam. Remaining budget: **61,601 KZT** (approximately 2.1% of the total budget).
 
 ### Answer 1 — Which machine will I upgrade first, 18 months from now, and why?
 
@@ -76,15 +76,15 @@ I priced four ready PCs from a Kazakhstan system builder (PULSER, sold through K
 
 | Role | Pre-built model | Specs | Price, KZT (2026-11-25) | My tower, KZT |
 |---|---|---|---:|---:|
-| Accountant | PULSER Eco 100 | Ryzen 5 5600GT (AM4), 16 GB **DDR4**, 1 TB | 235,107 | 425,892 |
-| Sales | PULSER Compact 15 | Ryzen 5 5600GT (AM4), **16 GB** DDR4, 1 TB | 296,441 | 502,823 |
-| Web developer | PULSER Advanced 379 | Ryzen 7 5700X (AM4), 32 GB DDR4, 1 TB, RTX 5060 Ti | 695,423 | 554,076 |
-| Designer | PULSER Advanced 377 | Ryzen 5 7500F (AM5), 32 GB DDR5, 1 TB, RTX 5060 | 705,083 | 527,129 |
-| **Towers total** | | | **1,932,054** | **2,009,920** |
+| Accountant | PULSER Eco 100 | Ryzen 5 5600GT (AM4), 16 GB DDR4, 1 TB | 235,107 | 426,593 |
+| Sales | PULSER Compact 15 | Ryzen 5 5600GT (AM4), 16 GB DDR4, 1 TB | 296,441 | 604,329 |
+| Web developer | PULSER Advanced 379 | Ryzen 7 5700X (AM4), 32 GB DDR4, 1 TB, RTX 5060 Ti | 695,423 | 548,519 |
+| Designer | PULSER Advanced 377 | Ryzen 5 7500F (AM5), 32 GB DDR5, 1 TB, RTX 5060 | 705,083 | 513,593 |
+| **Towers total** | | | **1,932,054** | **2,093,034** |
 
-(Monitors, OS, keyboards, UPS, headset are the same in both cases: +776,312 KZT. Pre-built PCs come with no OS.)
+(Monitors, operating systems, keyboards and mice, UPS, headset and webcam add **845,365 KZT** to the self-built configurations. The pre-built PCs come without an OS, so the required Windows licences must also be purchased separately.)
 
-**What the company gains with pre-built:** about 78,000 KZT cheaper in total; one shop gives the warranty for the whole PC (not separate warranties for each part); the PC is already assembled and tested — no time spent building, and someone else is responsible if it does not start; two of them even have a video card.
+**What the company gains with pre-built:** the four pre-built towers cost **160,980 KZT less** than the self-built towers. One shop gives the warranty for the whole PC (not separate warranties for each part); the PC is already assembled and tested — no time spent building, and someone else is responsible if it does not start; two of them even have a video card.
 
 **What the company loses:** the low price comes mostly from **old AM4 + DDR4** in three of the four PCs. AM4 gets no new CPUs, so in 3 years the only upgrade is a new PC — this is against "last a few years". The sales PC has only 16 GB, so we would have to add memory right away. The developer pays for a gaming video card he does not need, and the designer gets a video card but no money left for a colour-accurate monitor. The PSU and board brands are not listed. And some of these PULSER listings say "wholesale only, from 5 pieces", so buying exactly one of each may not even be possible. **My choice:** self-built on AM5 — a bit more money now, but every PC fits its person and can be upgraded instead of replaced. If Daniyar cares more about time and one warranty than about upgrades, the designer's PULSER Advanced 377 (it is AM5 + DDR5) is the one pre-built I would accept.
 

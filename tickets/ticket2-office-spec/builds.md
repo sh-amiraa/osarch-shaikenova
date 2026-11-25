@@ -22,7 +22,7 @@ Compatibility and power were checked on PCPartPicker (links in [evidence/pcpartp
 
 **Trade-off:** I took the cheapest memory that meets the rule (16 GB, 2×8 GB in dual channel) and a budget SSD (Kingston NV3). The **62,694 KZT saved** compared to the 32 GB kit helped keep the accountant's build within budget while allowing me to include a **UPS** (APC 650 VA, gives 5–10 minutes to save and shut down) and a **Dell P2425H** monitor with a height and pivot stand. Windows 11 **Pro**, not Home, because Pro has BitLocker to encrypt the financial data if the PC is stolen. The alternative I did not take: 32 GB of RAM — the accountant would not benefit enough from it to justify the extra cost.
 
-**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
+**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 16 GB DDR5-6000 (2×8) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell P2425H 23.8" · Windows 11 Pro · Logitech MK270 · APC BV650I-GR.
 
 The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
@@ -38,7 +38,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Trade-off:** same cheap CPU as the accountant (Ryzen 5 8600G — 6 cores are more than enough for tabs and video), but **32 GB** of memory instead of 16. To pay for it I took the cheaper monitor **Dell S2425H** (no height stand, but it has speakers) — the sales manager looks at the CRM, not at colours. I also added a **headset with a noise-cancelling mic** and a **webcam**, because bad sound on a call loses a customer faster than a slow PC. The alternative I did not take: Ryzen 7 — more cores would not help a browser that is waiting for memory.
 
-**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2425H 23.8" · Windows 11 Pro · Logitech MK270 · Logitech C270 webcam · Logitech H390 headset.
+**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · Kingston NV3 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2425H 23.8" · Windows 11 Pro · Logitech MK270 · Logitech C270 webcam · Logitech H390 headset.
 
 **Total:** 647,458 KZT (budget.csv, rows 13–24)
 
@@ -52,7 +52,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Trade-off:** I gave this person the **only 8-core CPU** (Ryzen 7 7700) and a faster SSD (WD SN850X instead of NV3). The OS is **Ubuntu 24.04 LTS** — it is free and open-source, Docker runs natively on Linux without a hidden VM (on Windows, Docker uses WSL2, which uses additional system resources), and production servers commonly use Linux. This saves **70,657 KZT** compared with a Windows 11 Pro licence. What I gave up: **64 GB** of memory — another 2×16 GB kit costs 230,168 KZT, which the budget cannot take now. But the board has **two free memory slots**, so 64 GB is a simple upgrade later. No video card: the 7700 has a small built-in GPU, enough for the monitor. A 27" 1440p monitor, because code + browser side by side need horizontal space.
 
-**Parts:** Ryzen 7 7700 OEM · DeepCool AK400 cooler (OEM CPU comes without one) · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2725DS 27" 1440p · Ubuntu 24.04 LTS · Logitech MK270.
+**Parts:** Ryzen 7 7700 BOX · DeepCool AK400 cooler (OEM CPU comes without one) · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · Dell S2725DS 27" 1440p · Ubuntu 24.04 LTS · Logitech MK270.
 
 **Total:** 705,148 KZT (budget.csv, rows 25–35)
 
@@ -66,7 +66,7 @@ The 8600G has a good built-in GPU (Radeon 760M), so no video card is needed.
 
 **Trade-off:** the biggest single part of this build is the **ASUS ProArt PA278CV** (27", 1440p, 100% sRGB, factory calibrated, 240,520 KZT) + 32 GB RAM + the fast SSD (scratch disk).
 
-**Parts:** Ryzen 5 8600G OEM · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · ASUS ProArt PA278CV 27" · Windows 11 Pro · Logitech MK270.
+**Parts:** Ryzen 5 8600G BOX · MSI PRO B650M-P · 32 GB DDR5-6000 (2×16) · WD Black SN850X 1 TB · MSI MAG A550BN 550 W · GameMax M60 · ASUS ProArt PA278CV 27" · Windows 11 Pro · Logitech MK270.
 
 **Total:** 838,649 KZT (budget.csv, rows 36–45)
 
